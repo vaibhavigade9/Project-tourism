@@ -1,0 +1,285 @@
+*{
+  margin: auto;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+h1{
+  text-align:center;
+ text-decoration: solid;
+ margin-top: 50px;
+ font-size: 50px;
+ text-decoration: underline;
+ color:rgb(22, 79, 124);
+ margin-bottom: 20px;
+ 
+}
+header{
+    display:flex;
+    background-color: white;
+    justify-content:space-around;
+    position: static;
+    height:100px;
+    width: 100%;
+    border-bottom: 7px solid orange;
+    
+}
+nav ul{
+    display:flex;
+    flex-wrap: wrap;
+    color:black;
+    justify-content:space-around;
+    margin-top: 50px;
+    gap: 20px;   
+}
+.anchor-link{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+.header-items img
+{
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.hero-section{
+display: flex;
+flex-wrap: wrap;
+width:100%;
+height:700px;
+overflow: hidden;
+}
+#main_title{
+ text-align: center;
+ text-decoration: solid;
+ margin-top: 50px;
+ font-size: 30px;
+ color:rgb(22, 79, 124);
+ margin-bottom: 20px;
+ 
+}
+div hr{
+    margin:20px 0px ;
+    
+}
+.hero-images
+{
+    display: flex;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.About-satara
+{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(230, 162, 61);
+    display: flex;
+    justify-content:space-around;
+    background-image: url(satara.jpg);
+}
+.about-satara{
+ 
+   text-align: justify;
+   height:80%;
+   width:40%;
+   background-color: white;
+   padding: 45px 40px;
+   border-radius: 10px;
+   line-height: 25px;
+   overflow-y: hidden;
+
+}
+.about-satara button{
+    height: 35px;
+    width: 150px;
+    color: white;
+    background-color: orange;
+    border: solid orange ;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+.top-destination-1{
+text-align: center;
+text-decoration: solid;
+ margin-top: 50px;
+ font-size: 30px;
+ color:rgb(22, 79, 124);
+ margin-bottom: 30px;
+
+
+
+}
+
+.destination-photos{
+    height: 200px;
+    width: 200px;
+    color: rgb(12, 12, 12);
+    font-weight:bold;
+}
+
+.top-destination-photos{
+    display: flex;
+   font-size: 20px;
+   
+    
+}
+.destination-photos{
+    border-radius:10px;
+text-align: center;
+
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: auto;
+}
+.footer-about-satra-1{
+    height: fit-content;
+    width: 40%;
+    margin-left: 50px;
+    line-height: 30px;
+}
+
+.about-us
+{
+text-align: center;
+ text-decoration: solid;
+ margin-top: 50px;
+ font-size: 20px;
+ color:rgb(22, 79, 124);
+ margin-bottom: 20px;
+ text-align: justify;
+ padding: 100px;
+}
+.about-us h1{
+    margin-bottom: 30px;
+    
+}
+
+.suggestion-form{
+    display: flex;
+    flex-direction: column;
+   gap: 30px;
+   font-size: 20px;
+ 
+
+    
+
+}
+
+.suggestion-form p{
+    text-align: center;
+    margin-bottom: 30px;
+    padding:30px;
+}
+.suggestion-form h1{
+  text-align: left;
+ text-decoration: solid;
+ margin-top: 50px;
+ font-size: 50px;
+ text-decoration: underline;
+ color:rgb(22, 79, 124);
+ margin-bottom: 20px;
+ 
+}
+.suggestion-form button{
+    background-color: orange;
+    height: 30px;
+    width: 90px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.suggestion-form input{
+    height: 40px;
+    width: 300px;
+   margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.suggestion-form form span{
+    height: 35px;
+    width: 100px;
+    
+    margin-bottom:  40px;
+
+}
+#suggestion-button{
+    height: 40px;
+    width: 150px;
+       margin-top: 20px;
+}
+.suggestion-form form textarea
+{
+    width: 100%;
+}
+
+.contact-form{
+      display: flex;
+    flex-direction: column;
+   gap: 30px;
+   font-size: 20px;
+
+}
+.contact-form-data input{
+       height: 40px;
+    width: 300px;
+    margin-top: 10px;
+   margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+.contact-form-data textarea
+{
+    width: 100%;
+}
+.contact-form-data button{
+     background-color: orange;
+    height: 30px;
+    width: 300px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+#contact-button
+{
+      height: 40px;
+    width: 150px;
+       margin-top: 20px;
+
+}
+.gallery-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    margin: 50px 50px;
+  
+
+
+
+}
+.gallery-heading{
+     text-align:center;
+ text-decoration: solid;
+ margin-top: 50px;
+ font-size: 50px;
+ text-decoration: underline;
+ color:rgb(22, 79, 124);
+ margin-bottom: 20px;
+ 
+    
+}
+.gallery-photos img{
+    height:200px;
+    width:20%;
+    margin:5px;
+
+}
+
+
