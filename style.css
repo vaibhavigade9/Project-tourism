@@ -63,11 +63,20 @@ div hr{
     margin:20px 0px ;
     
 }
-.hero-images
-{
-    display: flex;
-    text-align: center;
-    margin-bottom: 100px;
+.hero-images {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+.explore-img img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
 }
 .About-satara
 {
@@ -252,18 +261,7 @@ text-align: center;
        margin-top: 20px;
 
 }
-.gallery-photos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    height:100%;
-    width:100%;
-    margin: 50px 50px;
-  
 
-
-
-}
 .gallery-heading{
      text-align:center;
  text-decoration: solid;
@@ -275,11 +273,160 @@ text-align: center;
  
     
 }
-.gallery-photos img{
-    height:200px;
-    width:20%;
-    margin:5px;
+.gallery-photos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default: 1 image per row */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
 
+.gallery-photos img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
 }
 
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .header-items img {
+    width: 70%;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .suggestion-form input,
+  .contact-form-data input,
+  .contact-form-data button,
+  .suggestion-form button {
+    width: 90%;
+  }
+
+  .suggestion-form form span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .suggestion-form form textarea,
+  .contact-form-data textarea {
+    width: 100%;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about-satra-1 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .about-satara {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .top-destination-photos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-photos img {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1, .gallery-heading {
+    font-size: 30px;
+  }
+
+  .contact-form-data input,
+  .contact-form-data button,
+  .suggestion-form input,
+  .suggestion-form button {
+    width: 100%;
+  }
+
+  .about-us {
+    padding: 20px;
+  }
+
+  .destination-photos {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .hero-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-images {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery-photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .gallery-photos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+/* 768 -2 images 
+992- 3images 
+1200 -4 images */
